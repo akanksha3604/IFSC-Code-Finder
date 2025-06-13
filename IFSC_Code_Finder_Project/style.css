@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+  color: white;
+  overflow-x: hidden;
+}
+header {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  text-align: center;
+}
+.main-heading {
+  font-size: 2em;
+  color: #00ffff;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+  margin: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover {
+  color: #00ffff;
+}
+.intro {
+  text-align: center;
+  margin-top: 50px;
+}
+.tagline {
+  font-size: 1.5em;
+  animation: fadeIn 2s ease-in;
+}
+.quote {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 1.2em;
+  color: #ffebcd;
+}
+#chatbot {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
